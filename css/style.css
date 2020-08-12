@@ -1,0 +1,138 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #ff7f00;
+    justify-content: space-between;
+}
+
+li {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    height: 66px;
+}
+
+li>a {
+    padding: 0 16px 0;
+    font-size: 19px;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    border-left: 1px solid #8a8a8a;
+}
+
+.gallery {
+    border-left: none;
+}
+
+li:hover {
+    box-shadow: inset 5px -15px 0px -12px rgba(0, 0, 0, 1);
+}
+
+li>a:hover {
+    color: black;
+}
+
+.editor {
+    background-color: #e3e3e3;
+}
+
+.logo {
+    padding: 1.5rem 0 0 1rem;
+    width: 133px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.logo:hover {
+    box-shadow: none;
+}
+
+.nav-text {
+    padding: 0 50px 0;
+    display: flex;
+}
+
+.img-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 30px;
+    background-color: #e3e3e3;
+}
+
+a>img {
+    border: 1px solid #ff7f00;
+    ;
+    width: 90%;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
+
+[alt="profile"] {
+    border-radius: 10%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border: 1px solid #ff7f00;
+    ;
+}
+#about-container {
+    display: flex;
+    margin: 80px 150px;
+    background-color: none;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-top: 6rem;
+}
+
+.about-header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff7f00;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+
+i.fa-linkedin:before, i.fa-facebook-square:before, i.fa-github-square:before {
+    color: #ff7f00;
+    font-size: 45px;
+}
+
+footer {
+    color: white;
+    background-color: #ff7f00;
+    height: 200px;
+}
