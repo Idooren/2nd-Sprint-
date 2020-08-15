@@ -1,22 +1,5 @@
 'use strict'
 
-function filterGImgs(keyword) {
-    keyword = keyword.toLowerCase();
-    gFilteredImg = gImgs.filter(img => {
-        var keywords = img.keywords
-        return keywords.some(word => {
-            return (word.includes(keyword))
-        })
-    })
-    if (keyword === 'all') gFilteredImg = gImgs
-
-    renderImgGallery()
-}
-
-function filterByDropdown(keyword) {
-    filterGImgs(keyword);
-}
-
 function mapByKeywords() {
     var popularWords = {};
     gImgs.forEach(img => {

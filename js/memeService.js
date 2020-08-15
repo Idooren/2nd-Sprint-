@@ -55,6 +55,7 @@ function createImages() {
 }
 
 function createImage(url, ...keywords) {
+    
     return {
         id: gNextId++,
         url,
