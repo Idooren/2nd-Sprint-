@@ -2,7 +2,6 @@
 
 function init() {
     renderImgGallery();
-    renderPopularKeywords();
 }
 function renderImgGallery() {
     let elImgContainer = document.querySelector('.img-gallery-container');
@@ -11,16 +10,6 @@ function renderImgGallery() {
     })
     strHTMLS = strHTMLS.join('');
     elImgContainer.innerHTML = strHTMLS;
-}
-
-function renderPopularKeywords() {
-    sortPopularWords();
-    var elSearchWord = document.querySelector('.dropdown-content')
-    var keywords = [`<option selected="selected" value="all">All</option>`]
-    for (let i = 0; i < 4; i++) {
-        keywords.push(`<option  value="${gPopularWords[i][0]}">${gPopularWords[i][0]}</option>`)
-    }
-    elSearchWord.innerHTML = keywords.join('');
 }
 
 function onEditMeme(elImg) {
